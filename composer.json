@@ -1,0 +1,27 @@
+{
+    "name": "liiijabn/laravel-azure-china-blob-storage",
+    "description": "Microsoft Azure China Blob Storage integration for Laravel's Storage API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "l.jiabin",
+            "email": "liiijabn@gmail.com"
+        }
+    ],
+    "require": {
+        "league/flysystem-azure-blob-storage": "^0.1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liiijabn\\LaravelAzureChinaBlobStorage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liiijabn\\LaravelAzureChinaBlobStorage\\AzureChinaBlobStorageProvider"
+            ]
+        }
+    }
+}
